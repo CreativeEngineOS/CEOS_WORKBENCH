@@ -1,0 +1,89 @@
+{
+  "description": "A lookup table for UI tooltips, providing guidance and context for key features.",
+  "tooltips": {
+    "system-commands": {
+      "title": "System Commands",
+      "text": "Core system functions to manage your content workflow."
+    },
+    "process-new-files": {
+      "title": "Process New Files",
+      "text": "Ingest new .txt and .rtf files from the _INGEST folder, convert them to markdown, and add them to the archive."
+    },
+    "content-archive": {
+      "title": "Content Archive",
+      "text": "The central repository for all your documents, organized and versioned."
+    },
+    "status-filters": {
+      "title": "Status Filters",
+      "text": "Filter documents by their current workflow stage: Raw, Draft, Edited, or Published."
+    },
+    "sort-select": {
+      "title": "Sort by Date",
+      "text": "Organize the document list by the last modification date."
+    },
+    "search-bar": {
+      "title": "Universal Search",
+      "text": "Find documents by searching their titles, tags, and full text content simultaneously."
+    },
+    "raw-tab": {
+      "title": "Raw",
+      "text": "The initial, unprocessed version of a document immediately after ingestion."
+    },
+    "draft-tab": {
+      "title": "Draft",
+      "text": "The first editable version of a document, ready for initial changes."
+    },
+    "edited-tab": {
+      "title": "Edited",
+      "text": "The refined version of a document, ready for final approval before publishing."
+    },
+    "published-tab": {
+      "title": "Published",
+      "text": "The final, approved version of a document."
+    },
+    "read-edit-toggle": {
+      "title": "Preview/Edit Toggle",
+      "text": "Switch between read-only mode for safe viewing and editable mode for making changes."
+    },
+    "focus-mode-btn": {
+      "title": "Focus Mode",
+      "text": "Collapse the sidebars to create a distraction-free writing environment."
+    },
+    "info-panel": {
+      "title": "Info Panel",
+      "text": "View and manage a document's metadata, including its title, tags, and editor notes."
+    },
+    "create-draft-btn": {
+      "title": "Create Draft",
+      "text": "Move the document from the 'Raw' stage to 'Draft,' copying its content and updating its status."
+    },
+    "promote-edited-btn": {
+      "title": "Promote to Edited",
+      "text": "Move the document from the 'Draft' stage to 'Edited,' copying its content and updating its status."
+    },
+    "approve-publish-btn": {
+      "title": "Approve for Publish",
+      "text": "Move the document from the 'Edited' stage to 'Published,' making it final and ready for export."
+    },
+    "save-changes-btn": {
+      "title": "Save Changes",
+      "text": "Save your current edits to the document's version file."
+    },
+    "export-btn": {
+      "title": "Export",
+      "text": "Download the final, published version of the document."
+    },
+    "add-note-btn": {
+      "title": "Add Note",
+      "text": "Create a new editor note for a selected piece of text."
+    },
+    "info-edit-btn": {
+      "title": "Edit Metadata",
+      "text": "Switch the Info Panel to edit mode to update the document's title, tags, and synopsis."
+    },
+    "tag-badge": {
+      "title": "Clickable Tag",
+      "text": "Click a tag to instantly filter the Content Archive and find all related documents."
+    }
+  }
+}

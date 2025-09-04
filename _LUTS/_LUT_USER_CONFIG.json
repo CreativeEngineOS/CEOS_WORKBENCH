@@ -1,0 +1,10 @@
+{
+  "description": "User-specific configuration and settings.",
+  "settings": {
+    "theme": "theme-dimmed",
+    "transparency": "transparency-flat",
+    "textSize": "text-medium",
+    "spacing": "spacing-spacious",
+    "tooltips_enabled": false
+  }
+}

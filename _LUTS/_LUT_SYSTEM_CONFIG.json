@@ -1,0 +1,15 @@
+{
+  "id": "_LUT_SYSTEM_CONFIG",
+  "version": "1.0",
+  "description": "System-wide configuration variables consulted by CEOS Actors.",
+  "config": [
+    {
+      "key": "author",
+      "value": "Bas Slabbers"
+    },
+    {
+      "key": "copyright",
+      "value": "© 2025 Bas Slabbers. All rights reserved."
+    }
+  ]
+}
