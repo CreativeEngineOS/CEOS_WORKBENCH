@@ -1,0 +1,47 @@
+{
+  "id": "2025-019",
+  "title": "Workbench Blueprint",
+  "folderName": "2025-019_Workbench Blueprint",
+  "author": "Bas Slabbers",
+  "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+  "status": "Edited",
+  "type": "Text",
+  "dateCreated": "2025-09-01",
+  "dateModified": "2025-09-03 22:40:44",
+  "location": "",
+  "language": "English",
+  "summary": "",
+  "concepts": [],
+  "voiceTone": {
+    "keywords": [],
+    "summary": ""
+  },
+  "files": {
+    "raw": {
+      "name": "raw.md",
+      "size": 5363
+    },
+    "draft": {
+      "name": "draft.md",
+      "size": 5363
+    },
+    "edited": {
+      "name": "edited.md",
+      "size": 5334
+    },
+    "published": {
+      "name": "published.md",
+      "size": 0
+    }
+  },
+  "tags": [
+    "Blueprint"
+  ],
+  "synopsis": "This sprint focused on hardening the core application and implementing a foundational backend for system configurations. We successfully stabilized the app, resolving a series of critical bugs related to JavaScript initialization and UI state management. A new, robust framework for handling administrative tasks was built, paving the way for the development of a logical file ingestion workflow and a dedicated deleted files document management system.",
+  "editorNotes": [
+    {
+      "selection": "sprint",
+      "comment": "test"
+    }
+  ]
+}
