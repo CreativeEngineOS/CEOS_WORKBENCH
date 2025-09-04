@@ -1,7 +1,7 @@
 CEOS Workbench
 A web application for managing a document-centric workflow, from raw content ingestion to final publication.
 
-**Copyright © 2025, Bastiaan Slabbers/CEOS/OOgImages. All Rights Reserved. 
+**Copyright © 2025, Bastiaan Slabbers / OOgImages.com / CEOS. All Rights Reserved. 
 **No part of this project, including its content, code, or visual design, may be reproduced, distributed, or transmitted in any form or by any means, or be used to create derivative works, without prior written permission.
 
 Key Features
