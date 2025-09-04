@@ -1,0 +1,17 @@
+{
+    "ingestion": {
+        "title": "Getting Started ",
+        "visual": "ingestion_flow.svg",
+        "totalSteps": 3
+    },
+    "core-workflow": {
+        "title": "Core Workflow ",
+        "visual": null,
+        "totalSteps": 2
+    },
+    "tools-settings": {
+        "title": "Tools & Settings ",
+        "visual": null,
+        "totalSteps": 2
+    }
+}

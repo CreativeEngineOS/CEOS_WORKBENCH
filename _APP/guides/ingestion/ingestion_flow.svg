@@ -1,0 +1,28 @@
+<svg width="400" height="300" viewBox="0 0 450 350" xmlns="http://www.w3.org/2000/svg">
+<style>
+.node ellipse { fill: #111827; stroke: #9ca3af; stroke-width: 1; }
+.node text { font-family: Inter, sans-serif; font-size: 14px; fill: #e5e7eb; text-anchor: middle; }
+.edge path { stroke: #6b7280; stroke-width: 1.5; fill: none; }
+.edge polygon { fill: #6b7280; stroke: #6b7280; }
+</style>
+<g class="node" id="node-step-1">
+<ellipse cx="225" cy="50" rx="100" ry="30"/>
+<text x="225" y="55">1. Prepare & Add Files</text>
+</g>
+<g class="node" id="node-step-2">
+<ellipse cx="225" cy="150" rx="100" ry="30"/>
+<text x="225" y="155">2. Process New Files</text>
+</g>
+<g class="node" id="node-step-3">
+<ellipse cx="225" cy="250" rx="100" ry="30"/>
+<text x="225" y="255">3. Begin Workflow</text>
+</g>
+<g class="edge">
+<path d="M225,80 C225,100 225,120 225,120"/>
+<polygon points="225,120 229,110 221,110"/>
+</g>
+<g class="edge">
+<path d="M225,180 C225,200 225,220 225,220"/>
+<polygon points="225,220 229,210 221,210"/>
+</g>
+</svg>

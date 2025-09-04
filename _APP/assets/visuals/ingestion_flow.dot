@@ -1,0 +1,20 @@
+digraph IngestionWorkflow {
+    // --- Graph, Node, and Edge Attributes ---
+    graph [bgcolor="transparent", rankdir="TB"];
+
+    // FIX: Removed "rounded" from style for sharp corners.
+    //      Changed font to "Helvetica" for a standard sans-serif look.
+    node [shape="box", style="filled", fillcolor="#1f2937", fontname="Helvetica", color="#9ca3af", fontcolor="#e5e7eb"];
+    edge [color="#6b7280", fontname="Helvetica", fontcolor="#9ca3af"];
+
+    // --- Nodes (Steps) ---
+    // The 'id' attribute is CRITICAL for JavaScript highlighting.
+    step1 [label="Step 1: Place Files", id="node-step-1"];
+    step2 [label="Step 2: Import", id="node-step-2"];
+    step3 [label="Step 3: Process", id="node-step-3"];
+
+    // --- Connections (Edges) ---
+    step1 -> step2 [label="User Action"];
+    step2 -> step3 [label="System Action"];
+}
+

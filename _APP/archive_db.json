@@ -1,0 +1,581 @@
+[
+  {
+    "id": "2025-019",
+    "title": "Workbench Blueprint",
+    "folderName": "2025-019_Workbench Blueprint",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Edited",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 22:40:44",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 5363
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 5363
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 5334
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    },
+    "tags": [
+      "Blueprint"
+    ],
+    "synopsis": "This sprint focused on hardening the core application and implementing a foundational backend for system configurations. We successfully stabilized the app, resolving a series of critical bugs related to JavaScript initialization and UI state management. A new, robust framework for handling administrative tasks was built, paving the way for the development of a logical file ingestion workflow and a dedicated deleted files document management system.",
+    "editorNotes": [
+      {
+        "selection": "sprint",
+        "comment": "test"
+      }
+    ]
+  },
+  {
+    "id": "2025-018",
+    "title": "todo",
+    "folderName": "2025-018_todo",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Edited",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 2598
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 2598
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 2598
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    },
+    "tags": [
+      "to do"
+    ],
+    "synopsis": ""
+  },
+  {
+    "id": "2025-017",
+    "title": "Resume",
+    "folderName": "2025-017_Resume",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 1561
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-016",
+    "title": "Resume B_Slabbers",
+    "folderName": "2025-016_Resume B_Slabbers",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 1630
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-015",
+    "title": "Resume Bastiaan Slabbers",
+    "folderName": "2025-015_Resume B_Slabbers",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Published",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 22824
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 22824
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 22824
+      },
+      "published": {
+        "name": "published.md",
+        "size": 22824
+      }
+    },
+    "tags": [
+      "Resume"
+    ],
+    "synopsis": ""
+  },
+  {
+    "id": "2025-014",
+    "title": "handover",
+    "folderName": "2025-014_handover",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 8913
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-013",
+    "title": "dummytext",
+    "folderName": "2025-013_dummytext",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 970
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-012",
+    "title": "Decoupled ML Blueprint",
+    "folderName": "2025-012_Decoupled ML Blueprint",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 3730
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-009",
+    "title": "Curriculum Vitae",
+    "folderName": "2025-009_Curriculum Vitae",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 3263
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-008",
+    "title": "C.V.",
+    "folderName": "2025-008_CV",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 2927
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-007",
+    "title": "C.V. definitief",
+    "folderName": "2025-007_CV definitief",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 3455
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-006",
+    "title": "C.V. Bas Slabbers",
+    "folderName": "2025-006_CV Bas Slabbers",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 3908
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-003",
+    "title": "BSM eng",
+    "folderName": "2025-003_BSM eng",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:40",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 4566
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    },
+    "editorNotes": [
+      {
+        "selection": "Bas Slabbers Multimedia couples an extensive art background with a superb knowledge and understanding of multimedia and digital technology.  BSM offers vast experience in the broad areas of Photoshop, Illustrator, Indesign, web design, print and publications, multimedia installations \u0005and much more.",
+        "comment": "test note"
+      }
+    ]
+  },
+  {
+    "id": "2025-002",
+    "title": "Blood, sweat & tears",
+    "folderName": "2025-002_Blood sweat  tears",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Raw",
+    "type": "Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:39",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 2147
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 0
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  },
+  {
+    "id": "2025-001",
+    "title": "Blogs vs. photography",
+    "folderName": "2025-001_Blogs vs photography",
+    "author": "Bas Slabbers",
+    "copyright": "\u00a9 2025 Bas Slabbers. All rights reserved.",
+    "status": "Draft",
+    "type": "Rich Text",
+    "dateCreated": "2025-09-01",
+    "dateModified": "2025-09-03 19:43:39",
+    "location": "",
+    "language": "English",
+    "summary": "",
+    "concepts": [],
+    "voiceTone": {
+      "keywords": [],
+      "summary": ""
+    },
+    "files": {
+      "raw": {
+        "name": "raw.md",
+        "size": 10852
+      },
+      "draft": {
+        "name": "draft.md",
+        "size": 10852
+      },
+      "edited": {
+        "name": "edited.md",
+        "size": 0
+      },
+      "published": {
+        "name": "published.md",
+        "size": 0
+      }
+    }
+  }
+]

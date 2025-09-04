@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164pt" height="222pt" viewBox="0.00 0.00 163.84 221.60">
+<g id="graph0" class="graph" transform="translate(16.641620454154406,199.59653457370217) scale(0.8339310438249637)" data-name="IngestionWorkflow">
+
+<!-- step1 -->
+<g id="node-step-1" class="node" pointer-events="visible" data-name="step1">
+
+<polygon fill="#1f2937" stroke="#9ca3af" points="132.59,-213.6 0.14,-213.6 0.14,-177.6 132.59,-177.6 132.59,-213.6"/>
+<text text-anchor="middle" x="66.36" y="-191.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#e5e7eb">Step 1: Place Files</text>
+</g>
+<!-- step2 -->
+<g id="node-step-2" class="node" pointer-events="visible" data-name="step2">
+
+<polygon fill="#1f2937" stroke="#9ca3af" points="118.29,-124.8 14.43,-124.8 14.43,-88.8 118.29,-88.8 118.29,-124.8"/>
+<text text-anchor="middle" x="66.36" y="-102.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#e5e7eb">Step 2: Import</text>
+</g>
+<!-- step1&#45;&gt;step2 -->
+<g id="edge1" class="edge" data-name="step1-&gt;step2">
+
+<path fill="none" stroke="#6b7280" d="M66.36,-177.45C66.36,-165.76 66.36,-149.99 66.36,-136.42"/>
+<polygon fill="#6b7280" stroke="#6b7280" points="69.86,-136.72 66.36,-126.72 62.86,-136.72 69.86,-136.72"/>
+<text text-anchor="middle" x="102.54" y="-147" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#9ca3af">User Action</text>
+</g>
+<!-- step3 -->
+<g id="node-step-3" class="node" pointer-events="visible" data-name="step3">
+
+<polygon fill="#1f2937" stroke="#9ca3af" points="123.69,-36 9.03,-36 9.03,0 123.69,0 123.69,-36"/>
+<text text-anchor="middle" x="66.36" y="-13.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#e5e7eb">Step 3: Process</text>
+</g>
+<!-- step2&#45;&gt;step3 -->
+<g id="edge2" class="edge" data-name="step2-&gt;step3">
+
+<path fill="none" stroke="#6b7280" d="M66.36,-88.65C66.36,-76.96 66.36,-61.19 66.36,-47.62"/>
+<polygon fill="#6b7280" stroke="#6b7280" points="69.86,-47.92 66.36,-37.92 62.86,-47.92 69.86,-47.92"/>
+<text text-anchor="middle" x="111.1" y="-58.2" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#9ca3af">System Action</text>
+</g>
+</g>
+</svg>

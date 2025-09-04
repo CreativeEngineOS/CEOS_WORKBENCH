@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEOS :: WorkBench (v4.1.0 - Stable)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4">
+
+    <!-- Unified Layout Structure -->
+    <div id="main-container" class="h-[calc(100vh-2rem)]">
+
+        <!-- Header -->
+        <div id="app-header" class="card">
+             <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-xl font-bold" data-text-id="appTitle"></h1>
+                    <p class="text-sm text-gray-400" data-text-id="appSubtitle"></p>
+                </div>
+                <div class="flex items-center space-x-2 header-icons">
+                    <button id="help-btn" class="btn btn-secondary p-2" data-tooltip-id="help-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" /></svg>
+                    </button>
+                    <button id="settings-btn" class="btn btn-secondary p-2" data-tooltip-id="settings-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Tab Navigation -->
+        <div id="mobile-tabs" class="mobile-tabs">
+            <button id="mobile-tab-content" class="mobile-tab-btn active">Content</button>
+            <button id="mobile-tab-editor" class="mobile-tab-btn" disabled>Editor</button>
+            <button id="mobile-tab-info" class="mobile-tab-btn" disabled>Info</button>
+        </div>
+
+        <!-- Main Content Wrapper -->
+        <div id="content-wrapper">
+            <!-- Left Column -->
+            <div id="left-column" class="sidebar">
+                <div id="system-utilities-panel" class="card">
+                     <h2 class="text-lg font-semibold" data-text-id="systemUtilitiesTitle"></h2>
+                    <div class="space-y-2 mt-2">
+                        <button id="import-files-utility-btn" class="w-full btn btn-secondary" data-text-id="importFilesButton"></button>
+                        <button id="ingestBtn" class="w-full btn btn-primary" data-text-id="processFilesButton"></button>
+                    </div>
+                    <pre id="status-message" class="status-message-box"></pre>
+                </div>
+                <div id="content-archive-panel" class="card flex-grow flex flex-col">
+                     <h2 id="archive-title" class="text-lg font-semibold mb-2" data-text-id="contentArchiveTitle"></h2>
+                    <div id="status-filters" class="flex items-center flex-wrap gap-2 mb-2" data-tooltip-id="status-filters">
+                        <button class="filter-btn btn filter-All active" data-status="All" data-text-id="allFilter"></button>
+                        <button class="filter-btn btn filter-Raw" data-status="Raw" data-text-id="rawFilter"></button>
+                        <button class="filter-btn btn filter-Draft" data-status="Draft" data-text-id="draftFilter"></button>
+                        <button class="filter-btn btn filter-Edited" data-status="Edited" data-text-id="editedFilter"></button>
+                        <button class="filter-btn btn filter-Published" data-status="Published" data-text-id="publishedFilter"></button>
+                    </div>
+                    <div id="top-tags-container" class="flex flex-wrap gap-2 my-2 border-b border-gray-700 pb-2"></div>
+                    <div class="my-2">
+                        <select id="sort-select" class="w-full sort-select-input" data-tooltip-id="sort-select">
+                            <option value="desc" data-text-id="sortNewest"></option>
+                            <option value="asc" data-text-id="sortOldest"></option>
+                        </select>
+                    </div>
+                    <input type="search" id="search-bar" class="w-full mb-2 search-bar-input" data-tooltip-id="search-bar" data-text-id="searchPlaceholder">
+                    <div id="archiveList" class="space-y-2 overflow-y-auto"></div>
+                </div>
+            </div>
+
+            <!-- Center Column -->
+            <div id="center-content">
+                <div id="welcome-panel" class="main-content card">
+                    <div class="text-center text-gray-500 flex-grow flex flex-col justify-center">
+                        <h2 class="text-2xl font-bold text-gray-400" data-text-id="welcomeTitle"></h2>
+                        <p class="mt-2 welcome-text-highlight" data-text-id="welcomeMessage"></p>
+                    </div>
+                    <div class="flex items-center space-x-2 justify-center mt-4 border-t border-gray-700 w-full pt-4">
+                        <button id="import-files-welcome-btn" class="btn btn-secondary text-sm" data-text-id="welcomeImportButton"></button>
+                        <button id="welcome-settings-btn" class="btn btn-secondary text-sm" data-text-id="welcomeSettingsButton"></button>
+                    </div>
+                </div>
+                <div id="viewer-panel" class="main-content card" style="display: none;">
+                    <div class="flex justify-between items-center flex-shrink-0">
+                        <h2 id="viewer-title" class="text-xl font-semibold"></h2>
+                        <button id="focus-btn" class="p-2 rounded-md hover:bg-gray-700" data-tooltip-id="viewer-focus">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path id="focus-icon-expand" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4" />
+                                <path id="focus-icon-contract" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4v4H4M16 4v4h4M8 20v-4H4M16 20v-4h4" class="hidden" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="tabs" class="flex space-x-1 flex-shrink-0">
+                        <button class="tab-btn btn" data-version="raw" data-tooltip-id="raw-tab" data-text-id="rawFilter"></button>
+                        <button class="tab-btn btn" data-version="draft" data-tooltip-id="draft-tab" data-text-id="draftFilter"></button>
+                        <button class="tab-btn btn" data-version="edited" data-tooltip-id="edited-tab" data-text-id="editedFilter"></button>
+                        <button class="tab-btn btn" data-version="published" data-tooltip-id="published-tab" data-text-id="publishedFilter"></button>
+                    </div>
+                    <div id="tools-panel" class="h-12 flex items-center justify-between p-2 bg-gray-900/50 rounded-md border border-gray-700 flex-shrink-0">
+                        <div class="flex items-center space-x-2">
+                            <button id="info-btn" class="btn btn-secondary text-xs" data-tooltip-id="info-panel" data-text-id="infoButton"></button>
+                            <button id="find-replace-btn" class="btn btn-secondary text-xs" data-text-id="findReplaceButton"></button>
+                        </div>
+                        <div id="edit-toggle-container" class="flex items-center space-x-3" data-tooltip-id="read-edit-toggle">
+                            <span id="edit-state-label" class="text-sm font-medium text-gray-400" data-text-id="previewLabel"></span>
+                            <label for="edit-toggle" class="relative inline-flex items-center cursor-pointer"><input type="checkbox" id="edit-toggle" class="sr-only peer"><div class="w-11 h-6 bg-gray-600 rounded-full peer peer-focus:ring-2 peer-focus:ring-indigo-500 toggle-bg"></div></label>
+                        </div>
+                    </div>
+                    <div id="find-replace-bar" class="hidden p-2 bg-gray-900/50 rounded-md border border-gray-700 flex-shrink-0 space-y-2"></div>
+                    <textarea id="editor" class="w-full flex-grow rounded-md text-sm p-2" readonly></textarea>
+                    <div id="actions-panel" class="h-14 flex items-center justify-end space-x-2 flex-shrink-0">
+                        <button id="create-draft-btn" class="btn btn-positive hidden" data-tooltip-id="create-draft-btn" data-text-id="createDraftButton"></button>
+                        <button id="promote-edited-btn" class="btn btn-positive hidden" data-tooltip-id="promote-edited-btn" data-text-id="promoteEditedButton"></button>
+                        <button id="approve-publish-btn" class="btn btn-positive hidden" data-tooltip-id="approve-publish-btn" data-text-id="approvePublishButton"></button>
+                        <button id="save-changes-btn" class="btn btn-primary hidden" data-tooltip-id="save-changes-btn" data-text-id="saveChangesButton"></button>
+                        <button id="reject-btn" class="btn btn-negative hidden" data-tooltip-id="reject-btn" data-text-id="rejectButton"></button>
+                        <button id="export-btn" class="btn btn-secondary hidden" data-tooltip-id="export-btn" data-text-id="exportButton"></button>
+                    </div>
+                </div>
+                <div id="settings-panel" class="main-content card" style="display: none;"></div>
+            </div>
+
+            <!-- Right Column -->
+            <div id="right-column" class="sidebar info-sidebar card">
+                <div class="flex justify-between items-center flex-shrink-0">
+                    <h2 class="text-lg font-semibold" data-text-id="informationTitle"></h2>
+                    <div class="flex items-center space-x-2">
+                        <button id="info-edit-btn" class="btn btn-secondary text-xs" data-tooltip-id="info-edit-btn" data-text-id="editButton"></button>
+                        <button id="info-save-btn" class="btn btn-primary text-xs hidden" data-text-id="saveButton"></button>
+                        <button id="right-column-close-btn" class="btn-secondary rounded-full w-6 h-6 flex items-center justify-center">&times;</button>
+                    </div>
+                </div>
+                <div id="info-content" class="overflow-y-auto"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modals and Global Elements -->
+    <div id="guide-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-8 hidden z-50"></div>
+    <div id="global-tooltip" class="fixed z-50 p-2 text-xs bg-gray-800 text-gray-200 rounded-md shadow-lg pointer-events-none hidden"></div>
+
+    <script type="module">
+        import * as MainActor from './actors/main_actor.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            MainActor.init();
+        });
+    </script>
+</body>
+</html>
+
