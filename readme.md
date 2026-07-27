@@ -1,4 +1,4 @@
-CEOS Workbench
+CEOS_Workbench **(powered by the Artefuntional Intelligence of the Creative_EngineOS)
 A web application for managing a document-centric workflow, from raw content ingestion to final publication.
 
 **Copyright © 2025, Bastiaan Slabbers / OOgImages.com / CEOS. All Rights Reserved. 
